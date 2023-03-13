@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-2 py-1 border-2 border-sky-500 m-6 rounded;
+  }
+  .dark {
+    @apply bg-black text-white border-black;
+  }
+}

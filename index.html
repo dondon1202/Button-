@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="text-2xl m-6 mb-0">width</h1>
+    <button class="btn border-solid w-1/4">BUTTON</button>
+    <button class="btn border-solid w-1/5">BUTTON</button>
+
+    <h1 class="text-2xl m-6 mb-0">text-size</h1>
+    <button class="btn border-solid text-xs">BUTTON</button>
+    <button class="btn border-solid text-sm">BUTTON</button>
+    <button class="btn border-solid text-base">BUTTON</button>
+    <button class="btn border-solid text-lg">BUTTON</button>
+    <h1 class="text-2xl m-6 mb-0">color</h1>
+    <button class="dark btn border-solid text-xs">BUTTON</button>
+    <button class="dark btn border-solid text-sm">BUTTON</button>
+    <button class="dark btn border-solid text-base">BUTTON</button>
+    <button class="dark btn border-solid text-lg">BUTTON</button>
+
+    <h1 class="text-2xl m-6 mb-0">rounded</h1>
+    <button class="btn border-solid rounded">BUTTON</button>
+    <button class="btn border-solid rounded-lg">BUTTON</button>
+    <button class="btn border-solid rounded-2xl">BUTTON</button>
+    <button class="btn border-solid rounded-full">BUTTON</button>
+
+    <h1 class="text-2xl m-6 mb-0">ICON</h1>
+    <button class="btn border-solid rounded p-2 text-center">
+      <i class="fa-solid fa-download mx-1"></i>BUTTON
+    </button>
+    <button class="btn border-solid rounded p-2">
+      <i class="fa-solid fa-caret-down mx-1"></i>BUTTON
+    </button>
+    <button class="btn border-solid rounded p-2">
+      <i class="fa-solid fa-cloud-arrow-down mx-1"></i>BUTTON
+    </button>
+    <button class="btn border-solid rounded p-2">
+      <i class="fa-solid fa-igloo mx-1"></i>BUTTON
+    </button>
+
+    <h1 class="text-2xl m-6 mb-0">外框線</h1>
+    <button class="btn border-solid">BUTTON</button>
+    <button class="btn border-dashed">BUTTON</button>
+    <button class="btn border-dotted">BUTTON</button>
+    <div class="flex">
+      <div class="box">
+        <h1 class="text-2xl m-6 mb-0">hover</h1>
+        <button class="btn border-solid hover:dark">BUTTON</button>
+      </div>
+      <div class="box">
+        <h1 class="text-2xl m-6 mb-0">active</h1>
+        <button class="btn border-solid active:dark">BUTTON</button>
+      </div>
+      <div class="box">
+        <h1 class="text-2xl m-6 mb-0">focus</h1>
+        <button class="btn border-solid focus:dark">BUTTON</button>
+      </div>
+    </div>
+    <form class="bg-amber-100 font-bold w-[40%]">
+      <label class="block p-6 w-[80%] mx-auto py-10">
+        <span class="block text-sm font-medium text-slate-700">Email帳號</span>
+        <input
+          type="email"
+          class="peer mt-2 p-2 w-full"
+          placeholder="請輸入帳號"
+        />
+        <p class="mt-2 invisible peer-invalid:visible text-red-600 text-sm">
+          請輸入有效的電子信箱
+        </p>
+        <span class="block text-sm font-medium text-slate-700"
+          >password密碼</span
+        >
+        <input
+          type="password"
+          class="mt-2 p-2 w-full"
+          placeholder="請輸入密碼"
+        />
+        <span class="block text-sm font-medium text-slate-700 mt-6">姓名</span>
+        <input
+          type="text"
+          class="peer mt-2 p-2 w-full"
+          placeholder="請輸入姓名"
+        />
+        <div class="flex items-center mt-6">
+          <div class="flex items-center">
+            <input
+              id="default-radio-1"
+              type="radio"
+              value=""
+              name="default-radio"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+            <label for="default-radio-1" class="ml-2 text-sm font-medium"
+              >男性</label
+            >
+          </div>
+          <div class="flex items-center ml-4">
+            <input
+              checked
+              id="default-radio-2"
+              type="radio"
+              value=""
+              name="default-radio"
+              class="w-4 h-4"
+            />
+            <label for="default-radio-2" class="ml-2 text-sm font-medium"
+              >女性</label
+            >
+          </div>
+          <div class="flex items-center ml-4">
+            <input
+              disabled
+              id="disabled-radio-1"
+              type="radio"
+              value=""
+              name="disabled-radio"
+              class="w-4 h-4"
+            />
+            <label for="default-radio-2" class="ml-2 text-sm font-medium"
+              >第三性</label
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center mb-4 mt-6">
+          <input
+            id="default-checkbox"
+            type="checkbox"
+            value=""
+            class="w-4 h-4"
+          />
+          <label for="default-checkbox" class="ml-2 text-sm font-medium"
+            >禮拜一</label
+          >
+        </div>
+        <div class="flex items-center">
+          <input
+            checked
+            id="checked-checkbox"
+            type="checkbox"
+            value=""
+            class="w-4 h-4"
+          />
+          <label for="checked-checkbox" class="ml-2 text-sm font-medium"
+            >禮拜二</label
+          >
+        </div>
+
+        <label
+          for="message"
+          class="block mb-2 text-sm font-medium text-gray-900 mt-6"
+          >備註</label
+        >
+        <textarea
+          id="message"
+          rows="4"
+          class="block p-2.5 w-full text-sm rounded-lg border"
+          placeholder="請輸入文字"
+        ></textarea>
+      </label>
+    </form>
+  </body>
+</html>
